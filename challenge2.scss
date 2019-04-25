@@ -1,8 +1,14 @@
+/*$colors: #aaa, #bbb, #ccc, #ddd;
+@each $color in $colors {
+$i: index($colors, $color);
+.container-#{$i} {
+background-color: $color;
+}
+*/
 $colors: #aaa, #bbb, #ccc, #ddd;
 
 @for $i from 1 through 4 {
-    var j;
-    $i = $colors[j-1]
+    $i = $colors[i]
     .container-#{$i} {
         background-color: $value;
     }
