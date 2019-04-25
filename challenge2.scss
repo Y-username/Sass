@@ -1,0 +1,9 @@
+$colors: #aaa, #bbb, #ccc, #ddd;
+
+@for $i from 1 through 4 {
+    var j;
+    $i = $colors[j-1]
+    .container-#{$i} {
+        background-color: $value;
+    }
+}
